@@ -1,0 +1,66 @@
+﻿body {
+    background-color: #EBEBEB;
+}
+
+.contenedor-tipos-pago {
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color:#fff;
+    border-radius:5px;
+}
+
+.caja-tipo-pago {
+    width:20%;
+    height: 80px;
+}
+
+.caja-tipo-pago .contenido{
+    display:flex;
+    justify-content: center;
+    align-items:end;
+}
+
+    .caja-tipo-pago .contenido p{
+        margin:0;
+    }
+
+    .caja-tipo-pago .contenido .texto{
+        position:relative;
+        top:10px;
+    }
+
+    .caja-tipo-pago .contenido .texto a{
+        text-decoration:none;
+        font-size:14px;
+    }
+
+        .caja-tipo-pago .contenido .texto p {
+            font-size: 18px;
+        }
+
+.contenedor-tipos-pago .caja-tipo-pago .contenido .icono {
+    position:relative;
+    right: 20px;
+}
+
+
+#plus {
+    width:10%;
+    border-left: 1px solid #DFDFDF;
+}
+
+.contenedor-tipos-pago .caja-tipo-pago .plus{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    font-size:30px;
+}
+
+

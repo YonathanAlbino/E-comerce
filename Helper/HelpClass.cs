@@ -40,18 +40,10 @@ namespace Helper
         {
             try
             {
-                try
-                {
-                    if (lector[columna] is DBNull)
-                        return true;
-                    else
-                        return false;
-                }
-                catch (Exception ex)
-                {
-
-                    throw ex;
-                }
+                if (lector[columna] is DBNull)
+                    return true;
+                else
+                    return false;
             }
             catch (Exception ex)
             {
@@ -113,12 +105,12 @@ namespace Helper
                 {
                     if (!(char.IsNumber(item)))
                     {
-                            return false;
+                        return false;
                     }
                 }
                 return true;
             }
-            catch (Exception ex)  
+            catch (Exception ex)
             {
 
                 throw ex;
@@ -131,7 +123,7 @@ namespace Helper
                 int i = 0;
                 foreach (char item in cadena)
                 {
-                    if(cadena.Count() == 1 && cadena[0] == ',')
+                    if (cadena.Count() == 1 && cadena[0] == ',')
                         return false;
 
                     if (!(char.IsNumber(item)))
@@ -162,8 +154,8 @@ namespace Helper
                 {
                     if (!(char.IsLetterOrDigit(item)))
                     {
-                       if(!(char.IsWhiteSpace(item)))
-                        return false;
+                        if (!(char.IsWhiteSpace(item)))
+                            return false;
                     }
                     else if (item.ToString() == "ª" || item.ToString() == "º")
                     {
@@ -206,7 +198,7 @@ namespace Helper
                     return true;
                 return false;
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
 
                 throw ex;
@@ -237,7 +229,7 @@ namespace Helper
             {
                 cadena = cadena.Replace(",", ".");
                 return cadena;
-               
+
             }
             catch (Exception ex)
             {
@@ -288,6 +280,11 @@ namespace Helper
 
                 throw ex;
             }
+        }
+    
+        static public string mensajeError(object error)
+        {
+            return ((Exception)error).Message.ToString();
         }
     }
 }

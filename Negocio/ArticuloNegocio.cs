@@ -34,23 +34,6 @@ namespace Negocio
                 {
                     lista.Add(SetearDatos());
                 }
-
-                //foreach (Articulo item in lista)
-                //{
-                //   Type tipo = item.GetType();
-
-                //    PropertyInfo[] listaPropiedades = tipo.GetProperties();
-                //    foreach (PropertyInfo propiedad in listaPropiedades)
-                //    {
-                //        Object I = propiedad.GetValue(item);
-
-                //      if (I == null && propiedad.PropertyType.Equals(typeof(string)))
-                //        {
-                //           propiedad.SetValue(item, "");
-                //       }
-                //    }
-                //}
-
                 return lista;
             }
             catch (Exception ex)
