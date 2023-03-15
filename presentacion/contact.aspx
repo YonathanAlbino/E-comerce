@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="hero">
-        <h1>¿En qué podemos ayudarte?</h1>
+        <h1>¿En qué podemos ayudarteee?</h1>
         <img src="imagenes/imgHeroContact.png" alt="Alternate Text" class="img-fluid" />
     </div>
 
